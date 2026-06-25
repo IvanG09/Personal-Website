@@ -202,6 +202,20 @@
     .js .hero .lead{animation-delay:.38s}.js .hero .hero-meta{animation-delay:.5s}.js .hero .hero-cta{animation-delay:.6s}
   }
   @keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+  /* footer legal / impressum */
+  .legal{max-width:640px;margin:2rem auto 0;text-align:left}
+  .legal details{border-top:1px solid var(--glass-br);padding:.5rem 0}
+  .legal summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.6rem;padding:.7rem 0;
+    font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.14em;
+    font-size:.72rem;color:var(--muted);transition:color .2s}
+  .legal summary:hover{color:var(--text)}
+  .legal summary::-webkit-details-marker{display:none}
+  .legal summary::after{content:"+";margin-left:auto;color:var(--magenta);font-size:1.1rem;line-height:1}
+  .legal details[open] summary::after{content:"–"}
+  .legal .body{color:var(--muted);font-size:.86rem;line-height:1.65;padding:.2rem 0 1rem;max-width:60ch}
+  .legal .body a{color:var(--magenta)}
+  .legal .body strong{color:var(--text);font-weight:600}
 </style>
 </head>
 <body>
@@ -233,7 +247,7 @@
     <p class="lead">Motivated and detail-oriented ICT System Engineer with five years in IT systems and infrastructure — specialising in Windows Server, system optimisation and vulnerability management.</p>
     <div class="hero-meta">
       <span class="pill glass"><b>5</b> years in IT</span>
-      <span class="pill glass">Currently <b>@ VINCI Energies</b></span>
+      <span class="pill glass">Currently <a href="https://www.vinci-energies.ch" target="_blank" rel="noopener" style="color:var(--magenta);text-decoration:none"><b>@ VINCI Energies</b></a></span>
       <span class="pill glass">Focus: <b>Systems · Network · Security</b></span>
     </div>
     <div class="hero-cta">
@@ -278,7 +292,13 @@
     <div class="timeline">
       <div class="job glass card reveal">
         <span class="yr">2023 — Now</span>
-        <div><div class="role">ICT System Engineer</div><div class="co">VINCI Energies · Zürich</div></div>
+        <div><div class="role">ICT System Engineer</div><div class="co">
+  <a href="https://www.vinci-energies.ch/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;color:inherit">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+    VINCI Energies
+  </a>
+  · Zürich
+</div></div>
         <span class="now">Current</span>
       </div>
       <div class="job glass card reveal">
@@ -340,6 +360,12 @@
         <h3>IT Infrastructure Optimization</h3>
         <p>Streamlined and optimised existing IT infrastructure for better performance, reliability and day-to-day maintainability.</p>
       </div>
+      <div class="proj glass card reveal">
+        <div class="pn">PROJECT_04</div>
+        <h3>Family Inventory App</h3>
+        <p>Built a web-based family inventory application backed by a database — letting the household track, search and organise belongings from anywhere.</p>
+        <p style="margin-top:.9rem;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--magenta);letter-spacing:.02em">MariaDB · Python · Flask</p>
+      </div>
     </div>
   </section>
 
@@ -369,12 +395,12 @@
           <div class="m">ipso Bildung · Nov 2024</div>
         </div>
         <div class="citem">
-          <div class="t">Data Analytics &amp; Big Data — Level 1</div>
-          <div class="m">Berufsfachschule BBB Baden</div>
+          <div class="t">Computer Scientist EFZ — Systems Engineering</div>
+          <div class="m">Berufsfachschule BBB Baden · Aug 2021</div>
         </div>
         <div class="citem">
-          <div class="t">Computer Scientist EFZ — Systems Engineering</div>
-          <div class="m">Berufsfachschule BBB Baden</div>
+          <div class="t">Data Analytics &amp; Big Data — Level 1</div>
+          <div class="m">Berufsfachschule BBB Baden · Mar 2020</div>
         </div>
       </div>
     </div>
@@ -398,6 +424,28 @@
     <a href="https://www.linkedin.com/in/ivan-gajic-016514193/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
   <div class="copy" id="copy">Ivan Gajić — Zürich</div>
+  <div class="legal">
+  <details>
+    <summary>Impressum</summary>
+    <div class="body">
+      <strong>Ivan Gajić</strong><br>
+  Zürich, Switzerland<br>
+  <div>Contact:
+  <a href="https://www.linkedin.com/in/ivan-gajic-016514193/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;vertical-align:middle">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14M8.34 17V9.99H6.01V17h2.33M7.17 8.71a1.35 1.35 0 1 0 0-2.71 1.35 1.35 0 0 0 0 2.71M18 17v-3.84c0-2.02-.44-3.58-2.8-3.58-1.14 0-1.9.62-2.21 1.21h-.03V9.99H10.7V17h2.33v-3.47c0-.92.17-1.8 1.3-1.8 1.13 0 1.14 1.05 1.14 1.86V17H18Z"/></svg>
+    LinkedIn
+  </a></div>
+      <div style="margin-top:.8rem">Responsible for the content of this website: Ivan Gajić.</div>
+    </div>
+  </details>
+  <details>
+    <summary>Privacy</summary>
+    <div class="body">
+      This is a personal portfolio website. It does <strong>not</strong> use cookies, tracking, or analytics, and collects no personal data.<br><br>
+      The site is hosted on <strong>GitHub Pages</strong>; like any web host, GitHub may log technical data such as your IP address to deliver and secure the site. It also loads fonts from <strong>Google Fonts</strong>, so Google may receive your IP address when fonts load. Neither is used by the site owner to identify you.
+    </div>
+  </details>
+</div>
 </footer>
 
 <script>
